@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: navy;
+    clear: both;
+    height: 80px;
+    color: white;
+}
+
+h1 {
+    float: left;
+    padding: 20px 30px;
+    margin-left: 40px;
+}
+
+nav {
+    float: right;
+    padding: 30px 30px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 40px;
+    transition: 0.3s;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+#records {
+    clear: both;
+    padding: 10px;
+    width: fit-content;
+    margin: 100px auto;
+    border: 1px solid blue;
+    height: 454px;
+    overflow: auto;
+
+}
+
+.record {
+    padding: 20px;
+    background-color: blue;
+    margin: 20px;
+    width: 600px;
+    position: relative;
+}
+
+.record span {
+    display: block;
+    color: white;
+}
+
+.income::before {
+    content: '$';
+}
+
+.expense::before {
+    content: '-$';
+}
+
+.income , .expense {
+    font-weight: 800;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.record button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 4px;
+    border: 1px solid white;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.record button:hover {
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.record button:first-of-type {
+    right: 90px;
+}
+
+footer {
+    width: 100%;
+    background-color: blue;
+    padding: 40px;
+    color: white;
+}
+
+footer p {
+    margin: 0 auto;
+    width: fit-content;
+}
