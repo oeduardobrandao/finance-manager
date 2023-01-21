@@ -8,25 +8,22 @@
 body {
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-rows: 10vh 80vh 10vh;
-    grid: ;
+    background-image: url(./financing.jpg);
+    background-size: cover;
 }
 
 header {
-    background-color: navy;
     clear: both;
     height: 80px;
     color: white;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    z-index: 1;
 }
 
 h1 {
     float: left;
     padding: 20px 30px;
     margin-left: 40px;
+    font-family: Caudex, serif;
+    font-size: 32px;
 }
 
 h1:hover {
@@ -51,33 +48,32 @@ li:hover {
 }
 
 main {
-    height: 80vh;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-image: url(./financing.jpg);
-    background-size: cover;
-    z-index: 0;
-    
+    padding: 100px;   
 }
 
 #records {
     clear: both;
     padding: 10px;
     width: fit-content;
-    margin: 100px auto;
-    border: 1px solid blue;
-    height: 55vh;
+    margin: 0 auto;
+    border: 1px solid white;
+    height: 65vh;
     overflow: auto;
-    background-color: white;
-
 }
 
 .record {
     padding: 20px;
-    background-color: blue;
     margin: 20px;
     width: 600px;
     position: relative;
+}
+
+.positive {
+    background-color: rgba(18, 129, 51, 0.877);
+}
+
+.negative {
+    background-color: rgba(129, 71, 63, 0.877);
 }
 
 .record span {
@@ -96,38 +92,39 @@ main {
 .income , .expense {
     font-weight: 800;
     font-size: 18px;
+    font-family: Caudex, serif;
     margin: 10px 0;
 }
+
 
 .record button {
     position: absolute;
     top: 20px;
     right: 20px;
-    padding: 4px;
-    border: 1px solid white;
-    background-color: blue;
+    padding: 5px 10px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.322);
     color: white;
     font-size: 14px;
+    font-weight: 600;
     transition: 0.3s;
 }
 
 .record button:hover {
     background-color: white;
-    color: blue;
+    color: rgb(17, 90, 39);
     cursor: pointer;
 }
 
 .record button:first-of-type {
-    right: 90px;
+    right: 112px;
 }
 
 footer {
     width: 100%;
-    background-color: blue;
+    background-color: rgb(8, 32, 6);
     padding: 40px;
     color: white;
-    grid-row-start: 3;
-    grid-row-end: 4;
 }
 
 footer p {
